@@ -1,21 +1,37 @@
+<h2>NEW ORDER</h2>
 
-<form id="orderform" action="/pizzas" method="POST">
+<div class="container">
+  <img src="/pizzapic.png" alt="Pizza Time">
+</div>
 
-  <label for="firstName">First Name:</label>
-  <input type="text" name="first_name" id="firstName">
+<div class="container">
+  <form id="orderform" action="/pizzas" method="POST">
+    <div class="orderfield">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="first_name" id="firstName">
+    </div>
 
-  <label for="lastName">Surname:</label>
-  <input type="text" name="last_name" id="lastName">
+    <div class="orderfield">
+      <label for="lastName">Surname:</label>
+      <input type="text" name="last_name" id="lastName">
+    </div>
 
-  <label for="pizzaSelect">Choose Pizza:</label>
-  <select name="topping" id="pizzaSelect">
-    <option value="Breakfast">Breakfast Style</option>
-    <option value="Noodle">Noodle Style</option>
-  </select>
+    <div class="orderfield">
+      <label for="pizzaSelect">Choose Pizza:</label>
+      <select name="topping" id="pizzaSelect">
+        <option value="Breakfast">Breakfast Style</option>
+        <option value="Noodle">Noodle Style</option>
+      </select>
+    </div>
 
-  <label for="quantity">Quantity:</label>
-  <input type="number" name="quantity" id="quantity">
+    <div class="orderfield">
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" id="quantity">
+    </div>
 
-  <input type="submit" value="Submit Order">
+    <div class="container">
+      <input type="submit" value="Submit Order">
+    </div>
 
 </form>
+</div>

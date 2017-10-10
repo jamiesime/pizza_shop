@@ -1,36 +1,97 @@
 body {
   background-color: #EDCDB0;
   font-family: sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  background-image: url("pizzapattern.png");
+  background-repeat: repeat;
 }
 
 nav {
-  background-color: black;
+  background-color: #D06958;
   text-align: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 nav ul {
   display: inline;
+  font-size: 1.4em;
+  list-style: none;
+}
+
+nav ul h3 {
+  display: inline;
+  text-align: left;
+  color: white;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
 }
 
 h2 {
   text-align: center;
+  background-color: #FFC4BA;
+  border-top: 3px solid #D06958;
+  border-bottom: 3px solid #D06958;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #FFC4BA;
+  border: 3px solid #D06958;
+  padding: 10px;
+}
+
+.nav-flex li {
+  margin: 0px 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 .orders {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .order {
-  background-color: #DC947B;
-  border: 7px #DD4D21 solid;
+  background-color: #FFC4BA;
+  border: 7px #D06958 solid;
   border-radius: 3px;
   margin: 5px;
   padding: 5px;
+  text-align: center;
 }
 
-#orderform {
-  display: flex;
-  flex-direction: column;
+.orderfield {
+  margin: 10px 0px;
+}
+
+.order-container {
+  text-align: center;
+  display: inline;
+}
+
+.order-info {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  background-color: #FFC4BA;
+  border: 3px solid #D06958;
+  padding: 10px;
+}
+
+.options {
+  padding-top: 20px;
+  width: 25%;
+  margin: auto;
 }

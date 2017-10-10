@@ -1,14 +1,21 @@
-<p>Here are the details of the pizza you entered:</p>
+<div class="order-container">
 
-<p>First Name: <%= @pizza.first_name() %> </p>
-<p>Last Name: <%= @pizza.last_name() %> </p>
-<p>Topping: <%= @pizza.topping() %> </p>
-<p>Quanity: <%= @pizza.quantity() %> </p>
+  <h2>ORDER DETAILS</h2>
 
-<form action="/pizzas/<%=@pizza.id%>/delete" method="POST">
-  <input type="submit" value="Delete Order"/>
-</form>
+  <div class="order-info">
+    <p>First Name: <%= @pizza.first_name() %> </p>
+    <p>Last Name: <%= @pizza.last_name() %> </p>
+    <p>Topping: <%= @pizza.topping() %> </p>
+    <p>Quanity: <%= @pizza.quantity() %> </p>
+  </div>
 
-<form action="/pizzas/<%=@pizza.id%>/edit" method="GET">
-  <input type="submit" value="Edit Order"/>
-</form>
+  <div class="options">  
+    <form action="/pizzas/<%=@pizza.id%>/delete" method="POST">
+      <input type="submit" value="Delete Order"/>
+    </form>
+
+    <form action="/pizzas/<%=@pizza.id%>/edit" method="GET">
+      <input type="submit" value="Edit Order"/>
+    </form>
+  </div>
+</div>
