@@ -1,0 +1,36 @@
+body {
+  background-color: #EDCDB0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: black;
+  text-align: center;
+  flex-direction: column;
+}
+
+nav ul {
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+}
+
+.orders {
+  display: flex;
+  flex-direction: row;
+}
+
+.order {
+  background-color: #DC947B;
+  border: 7px #DD4D21 solid;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#orderform {
+  display: flex;
+  flex-direction: column;
+}
